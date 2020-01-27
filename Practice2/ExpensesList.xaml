@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practice2.ExpensesList"
+             Title="{Binding Text}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     Clicked="onAddExpenseClicked"/>
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="expenseList"
+              Margin="20"
+              >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Expense}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
