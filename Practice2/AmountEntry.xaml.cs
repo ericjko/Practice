@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Practice2
 {
-    public partial class ExpenseCalculation : ContentPage
+    public partial class AmountEntry : ContentPage
     {
-        public ExpenseCalculation()
+        public AmountEntry()
         {
             InitializeComponent();
         }
